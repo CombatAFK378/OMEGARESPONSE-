@@ -37,7 +37,6 @@ MODEL_NAME   = os.getenv("MODEL_NAME", "llama-3.3-70b-versatile")
 API_KEY      = GROQ_API_KEY or HF_TOKEN
 
 if not API_KEY:
-    print("[WARNING] No GROQ_API_KEY found. Running rule-based fallback.", file=sys.stderr)
     API_KEY = "dummy"
 
 ENV_BASE_URL = os.getenv("ENV_BASE_URL", "http://localhost:8000")
