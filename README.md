@@ -23,7 +23,7 @@ Built for the **Meta PyTorch OpenEnv Hackathon Grand Finale** — Bangalore, Apr
 | **Live Hugging Face Space** | [HuggingFace Space](https://huggingface.co/spaces/CombatAFK/OmegaResponse) |
 | **GitHub Repository** | [GitHub - CombatAFK378/OMEGARESPONSE-](https://github.com/CombatAFK378/OMEGARESPONSE-) |
 | **Colab Training Notebook** | [Open in Colab](https://colab.research.google.com/github/CombatAFK378/OMEGARESPONSE-/blob/main/training/grpo_train.ipynb) |
-| **Video Walkthrough / Blog** | [Project Blog on HF](https://huggingface.co/blog/CombatAFK/omega-response) (or local [blog.md](blog.md)) |
+| **Video Walkthrough / Blog** | [Project Blog on HF](https://huggingface.co/spaces/CombatAFK/OmegaResponse/blob/main/blog.md) (or local [blog.md](blog.md)) |
 
 *(Make sure to replace the placeholder links above before final submission!)*
 
