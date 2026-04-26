@@ -48,6 +48,14 @@ To prove the model generalizes and doesn't just memorize the state space, we eva
 | Fine-tuned Qwen 2.5 (OOD) | 0.0818 |
 | **Verdict** | **GENERALIZES ✅ (+0.016)** |
 
+### OOD Generalization Head-to-Head (3-way)
+We now also report a direct OOD comparison across:
+- Rule-based baseline
+- Pre-trained base model (before GRPO fine-tuning)
+- GRPO fine-tuned model
+
+This gives a cleaner judge-facing view of whether fine-tuning adds real reasoning value on unseen crisis states, beyond both hand-written heuristics and raw pre-trained behavior.
+
 ### Visual Proof of Training
 
 **Reward Curve:**
@@ -58,6 +66,9 @@ To prove the model generalizes and doesn't just memorize the state space, we eva
 
 **OOD Generalization (Baseline vs Fine-tuned):**
 ![OOD Comparison](ood_comparison.png)
+
+**OOD Generalization Head-to-Head (Pre-trained vs Rule-based vs Fine-tuned):**
+![OOD Head-to-Head](OOD_Generalization_Head_to_Head.png)
 
 ---
 
