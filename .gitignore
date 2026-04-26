@@ -1,0 +1,37 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+
+# Model weights (too large for GitHub / HF Space repo)
+omega_model/
+omega_model_lora/
+*.bin
+*.safetensors
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+training/grpo_train_qwen.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Dev/debug scripts — not for judges
+preflight_validate.py
+debug_groq.py
+test_rewards.py
+check_key.py
+
+# Docs / reports — not needed in repo
+SETUP_GUIDE.md
+validation_report.md
+
+# Eval output files you still want ignored
+ood_eval_results*.json

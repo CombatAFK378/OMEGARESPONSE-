@@ -1,0 +1,31 @@
+# requirements.txt
+# OmegaResponse — HuggingFace Spaces Docker environment
+
+# OpenEnv compliance
+openenv-core==0.2.3
+
+# Pin fastmcp explicitly — it is a transitive dep of openenv-core.
+# Without this pin, pip backtracks through all fastmcp versions causing
+# "resolution-too-deep" errors. Pinning both anchors the full graph.
+fastmcp==3.2.0
+
+# Web server (versions fastmcp 3.2.0 / openenv-core 0.2.3 resolve to)
+fastapi==0.135.3
+starlette==1.0.0
+uvicorn[standard]==0.43.0
+pydantic==2.12.5
+
+# HTTP client
+httpx==0.28.1
+requests==2.32.5
+openai==1.72.0
+
+# Groq API (local testing only — not used during training)
+groq==0.11.0
+
+# Data / utilities
+numpy>=1.24.0
+python-dotenv==1.2.2
+
+# Type checking
+typing_extensions==4.15.0

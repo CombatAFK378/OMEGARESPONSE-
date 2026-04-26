@@ -1,0 +1,34 @@
+name: omega-response-env
+version: "1.0.0"
+base_url: "https://huggingface.co/spaces/CombatAFK/OmegaResponse"
+description: >
+  Multi-agent disaster response environment for GRPO training.
+  Three cooperating agents (MedAgent, LogistAgent, CommandAgent) manage
+  5 disaster zones over 300 steps with long-horizon deferred effects,
+  conflict detection, and partial observability.
+theme: multi-agent-interactions
+entry_point: app.main:app
+actions:
+  MedAgent:
+    - DispatchAmbulance
+    - SetupFieldHospital
+    - RequestBloodSupply
+    - TriageZone
+    - BroadcastMedUpdate
+  LogistAgent:
+    - ClearRoad
+    - RouteTruck
+    - RefuelVehicle
+    - RequestAirDrop
+    - BroadcastLogistUpdate
+  CommandAgent:
+    - ApproveAction
+    - RejectAction
+    - OverrideAgent
+    - EscalateToExternal
+    - BroadcastAlert
+    - DeclareZoneClear
+reward_range: [0.0, 1.0]
+max_steps: 300
+num_zones: 5
+num_agents: 3
